@@ -4,7 +4,7 @@
 
 ---
 
-[Image: Hero shot of Mac Studio M2 Ultra with Mini-Agent terminal running]
+![Mac Studio Setup](https://raw.githubusercontent.com/latent-variable/minimax-agent-guide/master/images/performance-comparison.png)
 
 ---
 
@@ -202,7 +202,9 @@ This demonstrates MiniMax's strength in practical coding vs pure benchmark score
 
 ---
 
-[Image: LM Studio interface showing model loaded]
+![Performance Comparison](https://raw.githubusercontent.com/latent-variable/minimax-agent-guide/master/images/performance-comparison.png)
+
+![RAM Usage Comparison](https://raw.githubusercontent.com/latent-variable/minimax-agent-guide/master/images/ram-usage-comparison.png)
 
 ---
 
@@ -304,7 +306,7 @@ cp ~/Documents/Mini-Agent/mini_agent/config/system_prompt.md \
 
 ---
 
-[Image: Terminal showing mini-agent running]
+![RAM Usage Comparison](https://raw.githubusercontent.com/latent-variable/minimax-agent-guide/master/images/ram-usage-comparison.png)
 
 ---
 
