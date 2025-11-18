@@ -212,7 +212,12 @@ The agent will:
 
 ## Real-World Test: Analog Clock
 
-**Task:** Generate working HTML/CSS/JS analog clock
+**Prompt:**
+```
+Create HTML/CSS of an analog clock showing ${time}. Include numbers (or numerals)
+if you wish, and have a CSS animated second hand. Make it responsive and use a
+white background.
+```
 
 **MiniMax M2-THRIFT:** ✓ Working on first try
 
