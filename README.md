@@ -212,6 +212,8 @@ The agent will:
 
 ## Real-World Test: Analog Clock
 
+*Test methodology from [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1oxxrhc/kimi_k2_is_the_best_clock_ai/)*
+
 **Prompt:**
 ```
 Create HTML/CSS of an analog clock showing ${time}. Include numbers (or numerals)
