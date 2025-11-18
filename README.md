@@ -43,8 +43,8 @@ MiniMax M2 is a Mixture-of-Experts (MoE) model released in October 2025:
 **Architecture:**
 - 230 billion total parameters
 - Only 10 billion active per token
-- 32K token context window
-- Apache 2.0 license (fully open)
+- Up to 200K token context window
+- Modified MIT license (fully open)
 
 **Performance:**
 - Ranks #1 among open-source models on Artificial Analysis Intelligence Index
