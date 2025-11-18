@@ -168,33 +168,6 @@ Copy system prompt:
 cp ~/Documents/Mini-Agent/mini_agent/config/system_prompt.md ~/.mini-agent/config/
 ```
 
-### Step 6: Optimize for Local Performance
-
-**The Problem:** By default, Mini-Agent sends requests that cause LM Studio to reprocess all tokens on every request, wasting time and resources.
-
-**The Fix:** Edit `~/Documents/Mini-Agent/mini_agent/llm/openai_client.py` around line 65:
-
-```python
-params = {
-    "model": self.model,
-    "messages": api_messages,
-    # Add consistent parameters for better KV cache stability
-    "temperature": 0.7,  # Consistent temperature prevents cache invalidation
-    "seed": 42,  # Fixed seed for deterministic behavior
-    # NOTE: Comment out reasoning_split for local models
-    # "extra_body": {"reasoning_split": True},
-}
-```
-
-**What this does:**
-- Consistent `temperature` and `seed` prevent cache invalidation
-- Removing `reasoning_split` from `extra_body` improves cache compatibility
-- LM Studio can now reuse KV cache between requests
-
-**Expected results:**
-- First request: Full processing (builds cache)
-- Follow-up requests: Only process new tokens (much faster)
-- Reduced token reprocessing: 90%+ improvement
 
 ---
 
