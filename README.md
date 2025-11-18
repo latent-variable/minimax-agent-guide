@@ -4,7 +4,7 @@
 
 ---
 
-![AI Model Leaderboard](images/leaderboard.png)
+![AI Model Leaderboard](images/artificial_analysis_ranking.png)
 
 *MiniMax M2 ranks among the top open-source models globally*
 
