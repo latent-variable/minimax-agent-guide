@@ -215,7 +215,13 @@ The agent will:
 **Task:** Generate working HTML/CSS/JS analog clock
 
 **MiniMax M2-THRIFT:** ✓ Working on first try
+
+![MiniMax Clock Result](images/minimax_clock.png)
+
 **GPT-OSS-120B:** Required 3 iterations
+
+![GPT-OSS Clock Result](images/gpt-oss-120b_clock.png)
+
 **Qwen3-Coder:** Too large for 128GB
 
 ---
