@@ -1,6 +1,6 @@
-# I Replaced My $200/Month GPT-4 Subscription with a Local AI Agent
+# State-of-the-Art Local AI Agents: What 128GB of RAM Can Do in Late 2025
 
-*How to deploy state-of-the-art AI agents on Mac Studio, DGX Spark, and AMD AI Max hardware — completely free and private.*
+*Running AI coding agents completely locally on Mac Studio, DGX Spark, and AMD AI Max hardware when you don't want to use cloud APIs.*
 
 ---
 
@@ -10,15 +10,15 @@
 
 ---
 
-With 128GB of RAM becoming standard in high-end consumer machines, you can now run state-of-the-art AI agents entirely locally. This guide shows you how to deploy MiniMax M2-THRIFT with Mini-Agent — achieving near-GPT-4 performance without cloud APIs, subscription fees, or privacy concerns.
+With 128GB of RAM becoming standard in high-end consumer machines, you can now run state-of-the-art AI agents entirely locally. This guide shows you how to deploy MiniMax M2-THRIFT with Mini-Agent, achieving near Claude 3.5 Sonnet performance for privacy-sensitive work and tasks where you prefer to avoid cloud APIs.
 
 ## Why This Matters
 
 Most AI agent frameworks force you to choose between:
 
-- **Expensive cloud APIs** — $10-75 per million tokens adds up fast
-- **Inconsistent local models** — struggle with complex tasks and tool use
-- **Privacy trade-offs** — your code and data sent to third parties
+- **Expensive cloud APIs:** $10-75 per million tokens adds up fast
+- **Inconsistent local models:** struggle with complex tasks and tool use
+- **Privacy trade-offs:** your code and data sent to third parties
 
 MiniMax M2-THRIFT + Mini-Agent solves all three problems.
 
@@ -50,7 +50,7 @@ MiniMax M2 is a Mixture-of-Experts (MoE) model released in October 2025:
 - Ranks #1 among open-source models on Artificial Analysis Intelligence Index
 - 67% coding score, 61% overall intelligence
 - Specifically optimized for agentic workflows
-- Comparable to GPT-4 and Claude Sonnet on practical tasks
+- Comparable to Claude 3.5 Sonnet on practical coding tasks
 
 ### What Makes THRIFT Special
 
@@ -114,8 +114,12 @@ rm *.part*
 ### Step 3: Start Server
 
 1. Load model in LM Studio
-2. Start Local Server (port 1234)
-3. Verify: `http://localhost:1234/v1/models`
+2. Configure model settings:
+
+![LM Studio Model Loading](images/LM-studio_model_loading.png)
+
+3. Start Local Server (port 1234)
+4. Verify: `http://localhost:1234/v1/models`
 
 ### Step 4: Install Mini-Agent
 
@@ -202,11 +206,11 @@ The agent will:
 
 ## Cost Analysis
 
-**GPT-4 API:** $10/M tokens, no privacy
-**Claude Sonnet:** $15/M tokens, no privacy
-**MiniMax Local:** $0/M tokens, full privacy
+**ChatGPT Plus:** $20/month, no privacy, usage limits
+**Claude Pro:** $20/month, no privacy, usage limits
+**MiniMax Local:** $0/month, full privacy, unlimited usage
 
-**Break-even:** 3-6 months for heavy users (10M+ tokens/month)
+This won't replace your API subscriptions, but it allows you to do incredible things completely locally when you don't want to use cloud services.
 
 ---
 
@@ -286,14 +290,14 @@ model = "openai/gpt-oss-120b"
 
 MiniMax M2-THRIFT on 128GB machines offers:
 
-- Near-GPT-4 performance
+- Near Claude 3.5 Sonnet performance
 - Complete privacy
 - Zero ongoing costs
 - Offline functionality
+- Unlimited local experimentation
 
 **Investment:** Mac Studio ($3,999) or alternatives
 **Setup time:** ~2 hours
-**Break-even:** 3-6 months for heavy users
 
 ### Next Steps
 
