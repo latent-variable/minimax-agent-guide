@@ -24,11 +24,11 @@ MiniMax M2-THRIFT + Mini-Agent solves all three problems.
 
 ## Who This Guide Is For
 
-If you own any of these machines with 128GB RAM:
+This guide is for you if:
 
-- Apple Mac Studio M2/M3 Ultra
-- NVIDIA DGX Spark
-- AMD AI Max 395 Mini PC
+- You have at least 128GB of RAM (Mac Studio, MacBook Pro, etc.)
+- You have an AI workstation with GPUs (couple of A6000s, etc.)
+- You're curious about running AI agents completely locally
 
 You can run a fully capable AI coding agent locally that rivals commercial APIs.
 
@@ -43,8 +43,8 @@ MiniMax M2 is a Mixture-of-Experts (MoE) model released in October 2025:
 **Architecture:**
 - 230 billion total parameters
 - Only 10 billion active per token
-- 128K token context window
-- MIT license (fully open)
+- 32K token context window
+- Apache 2.0 license (fully open)
 
 **Performance:**
 - Ranks #1 among open-source models on Artificial Analysis Intelligence Index
@@ -58,7 +58,7 @@ THRIFT applies expert pruning to reduce the model by ~25%:
 
 **Benefits:**
 - Faster CPU inference
-- Lower memory: ~70GB vs ~90GB
+- Lower memory: ~100GB RAM required
 - 95% of full model quality
 
 **Benchmarks:**
@@ -78,13 +78,14 @@ Even more efficient options:
 ## Hardware Requirements
 
 **RAM: 128GB minimum**
-- Model: ~70GB
-- System: ~10GB
-- Headroom: ~48GB
+- Model: ~100GB
+- System + Headroom: ~28GB
 
 **Storage: 100GB free**
 
-**CPU: 8+ cores** (Apple Silicon recommended)
+**CPU: 16+ cores recommended** (Apple M3/M4 Max or better)
+- M3/M4 Max: 16 CPU cores, 40 GPU cores
+- Ideal for this workload
 
 ---
 
@@ -225,13 +226,28 @@ if you wish, and have a CSS animated second hand. Make it responsive and use a
 white background.
 ```
 
-**MiniMax M2-THRIFT:** ✓ Working on first try
+**Results:**
 
-![MiniMax Clock Result](images/minimax_clock.png)
+<table>
+<tr>
+<td width="50%">
 
-**GPT-OSS-120B:** Required 3 iterations
+**MiniMax M2-THRIFT**
+✓ Working on first try
 
-![GPT-OSS Clock Result](images/gpt-oss-120b_clock.png)
+<img src="images/minimax_clock.png" width="100%">
+
+</td>
+<td width="50%">
+
+**GPT-OSS-120B**
+Required 3 iterations
+
+<img src="images/gpt-oss-120b_clock.png" width="100%">
+
+</td>
+</tr>
+</table>
 
 **Qwen3-Coder:** Too large for 128GB
 
@@ -318,4 +334,4 @@ The future of AI development isn't exclusively cloud-based.
 
 ---
 
-*By Lino Valdovinos | January 2025 | Mac Studio M2 Ultra*
+*By Lino Valdovinos | January 2025 | MacBook Pro M3 Max*
