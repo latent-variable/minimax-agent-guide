@@ -4,7 +4,7 @@
 
 ---
 
-![AI Model Leaderboard](images/artificial_analysis_ranking.png)
+![AI Model Leaderboard](https://raw.githubusercontent.com/latent-variable/minimax-agent-guide/master/images/artificial_analysis_ranking.png)
 
 *MiniMax M2 ranks among the top open-source models globally*
 
@@ -117,7 +117,7 @@ rm *.part*
 1. Load model in LM Studio
 2. Configure model settings:
 
-![LM Studio Model Loading](images/LM-studio_model_loading.png)
+![LM Studio Model Loading](https://raw.githubusercontent.com/latent-variable/minimax-agent-guide/master/images/LM-studio_model_loading.png)
 
 3. Start Local Server (port 1234)
 4. Verify: `http://localhost:1234/v1/models`
@@ -256,26 +256,13 @@ white background.
 
 **Results:**
 
-<table>
-<tr>
-<td width="50%">
+**MiniMax M2-THRIFT:** ✓ Working on first try
 
-**MiniMax M2-THRIFT**
-✓ Working on first try
+![MiniMax Clock Result](https://raw.githubusercontent.com/latent-variable/minimax-agent-guide/master/images/minimax_clock.png)
 
-<img src="images/minimax_clock.png" width="100%">
+**GPT-OSS-120B:** Required 3 iterations
 
-</td>
-<td width="50%">
-
-**GPT-OSS-120B**
-Required 3 iterations
-
-<img src="images/gpt-oss-120b_clock.png" width="100%">
-
-</td>
-</tr>
-</table>
+![GPT-OSS Clock Result](https://raw.githubusercontent.com/latent-variable/minimax-agent-guide/master/images/gpt-oss-120b_clock.png)
 
 **Qwen3-Coder:** Too large for 128GB
 
